@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf [
+   <!ENTITY vcatalog  "http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#"> 
+   <!ENTITY rdfs     "http://www.w3.org/2000/01/rdf-schema">
+    ]>
+
+<rdf:RDF  
+   xmlns:rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="&rdfs;#"
+   xmlns     ="&rdfs;#" 
+   xml:base  ="&vcatalog;">
+
+<Class rdf:ID="Ressource">
+  <label xml:lang="en">Ressource</label>
+  <comment xml:lang="en">Every type of support (paper, IT) whichwho are going to help in a knowledge of the risks</comment>
+  <label xml:lang="fr">Ressource</label>
+  <comment xml:lang="fr">Tout type de support (papier, informatique) qui vont aider � une connaissance des risques.</comment>
+</Class>
+
+<Class rdf:ID="Utilisateur">
+  <label xml:lang="en">User</label>
+  <comment xml:lang="en">.</comment>
+  <label xml:lang="fr">Utilisateur</label>
+  <comment xml:lang="fr">.</comment>
+</Class>
+
+<Class rdf:ID="Page">
+  <label xml:lang="fr">Page</label>
+  </Class>
+
+<Class rdf:ID="Expertise">
+  <label xml:lang="fr">Expert</label>
+  <comment xml:lang="fr">.</comment>
+</Class>
+
+<Class rdf:ID="Categorie">
+  <label xml:lang="fr">Categorie</label>
+  <comment xml:lang="fr">.</comment>
+</Class>
+
+<Class rdf:ID="Expertise">
+  <subClassOf rdf:resource="#Ressource"/>
+  <label xml:lang="en">Expertise</label>
+  <comment xml:lang="en"> The expertise is a help facility in the decision, by the search for the technical or scientific facts. She allows the various managers of resources to make their decisions in better knowledge of cause, by having a lighting deepened(fathomed) on certain stakes and consequences (financial, human) in their decisions. it is often confided to several experts.</comment>
+  <label xml:lang="fr">Expertise</label>
+  <comment xml:lang="fr">dispositif d�aide � la d�cision, par la recherche des faits techniques ou scientifiques.Elle permet aux diff�rents managers de ressources de prendre leurs d�cisions en meilleure connaissance de cause, en ayant un �clairage approfondi sur certains enjeux et cons�quences(financi�res, humaines, ...) de leurs d�cisions.Elle  est souvent confi�e �  plusieurs experts.</comment>
+</Class>
+
+<Class rdf:ID="Utilisateur">
+  <label xml:lang="en">User</label>
+  <comment xml:lang="en">.</comment>
+  <label xml:lang="fr">Utilisateur</label>
+  <comment xml:lang="fr">.</comment>
+</Class>
+
+<rdf:Property rdf:ID="declarer_par">
+  <range rdf:resource="#Utilisateur"/>
+  <label xml:lang="en">Declare by</label>
+  <comment xml:lang="en">declare by </comment>
+  <label xml:lang="fr">declarer par </label>
+  <comment xml:lang="fr">declarer par</comment>
+</rdf:Property>
+
+<rdf:Property rdf:ID="Expert_en">
+  <range rdf:resource="#Utilisateur"/>
+  <label xml:lang="fr">expert en </label>
+  <comment xml:lang="fr">expert en</comment>
+</rdf:Property>
+<rdf:Property rdf:ID="classer_dans">
+  <range rdf:resource="#Categorie"/>
+  <label xml:lang="en">Declare by</label>
+  <comment xml:lang="en">declare by </comment>
+  <label xml:lang="fr">declarer par </label>
+  <comment xml:lang="fr">declarer par</comment>
+</rdf:Property>
+
+<rdf:Property rdf:ID="nom">
+  <label xml:lang="en">Name partner</label>
+  <comment xml:lang="en">name of a partner.</comment>
+  <label xml:lang="fr">Nom du partenaire</label>
+  <comment xml:lang="fr">nom du partenaire.</comment>
+</rdf:Property>
+<rdf:Property rdf:ID="password">
+  <domain rdf:resource="#Utilisateur"/>
+  <label xml:lang="en">Password</label>
+  <comment xml:lang="en">.</comment>
+  <label xml:lang="fr">Mot de passe</label>
+  <comment xml:lang="fr">.</comment>
+</rdf:Property>
+<rdf:Property rdf:ID="profile">
+  <domain rdf:resource="#Utilisateur"/>
+  <label xml:lang="en">Profile</label>
+  <comment xml:lang="en">.</comment>
+  <label xml:lang="fr">Profile</label>
+  <comment xml:lang="fr">.</comment>
+</rdf:Property>
+<rdf:Property rdf:ID="adresse">
+  <domain rdf:resource="#Partenaire"/>
+  <label xml:lang="en">Adress partner</label>
+  <comment xml:lang="en">Adress of a partner.</comment>
+  <label xml:lang="fr">Adresse du partenaire</label>
+  <comment xml:lang="fr">Adresse du partenaire.</comment>
+</rdf:Property>
+
+<rdf:Property rdf:ID="pays">
+  <domain rdf:resource="#Partenaire"/>
+  <label xml:lang="en">Contry</label>
+  <comment xml:lang="en">.</comment>
+  <label xml:lang="fr">Pays</label>
+  <comment xml:lang="fr">Pays du partenaire.</comment>
+</rdf:Property>
+
+<rdf:Property rdf:ID="mots_cles">
+  <domain rdf:resource="#Ressource"/>
+  <label xml:lang="en">Keyword of source</label>
+  <comment xml:lang="en">keyword of source.</comment>
+  <label xml:lang="fr">Mots cles source</label>
+  <comment xml:lang="fr"> mots cles de la source.</comment>
+</rdf:Property>
+
+
+<rdf:Property rdf:ID="lien">
+  <label xml:lang="en">localisation of model</label>
+  <comment xml:lang="en">localisation of the  model.</comment>
+  <label xml:lang="fr">localisationdu modele</label>
+  <comment xml:lang="fr"> la ou on peut trouver le modele, les references du modele.</comment>
+</rdf:Property>
+
+<rdf:Property rdf:ID="format">
+  <domain rdf:resource="#Ressource"/>
+  <label xml:lang="en">Format of model</label>
+  <comment xml:lang="en">Format of model.</comment>
+  <label xml:lang="fr">format du modele</label>
+  <comment xml:lang="fr"> format sous lequel a ete enregistre le modele.</comment>
+</rdf:Property>
+
+<rdf:Property rdf:ID="equipe">
+  <domain rdf:resource="#Ressource"/>
+  <label xml:lang="en">team</label>
+  <comment xml:lang="en">team.</comment>
+  <label xml:lang="fr">Equipe</label>
+  <comment xml:lang="fr">Equipe.</comment>
+</rdf:Property>
+</rdf:RDF>

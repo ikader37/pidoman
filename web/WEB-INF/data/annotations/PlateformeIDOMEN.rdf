@@ -1,0 +1,184 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#" xmlns:plateforme="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xml:base="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs-instances">
+
+
+<plateforme:Page rdf:ID="zeb3">
+<plateforme:nom>zeb3</plateforme:nom>
+<plateforme:description>test</plateforme:description>
+<plateforme:contenu>contenu Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis a</plateforme:contenu>
+<plateforme:motcle>Risque, Contamination</plateforme:motcle>
+<plateforme:date>17/08/2018</plateforme:date>
+</plateforme:Page>
+
+<plateforme:Page rdf:ID="zeb">
+<plateforme:nom>zeb</plateforme:nom>
+<plateforme:motcle>Risque, Contamination</plateforme:motcle>
+<plateforme:contenu>contenu Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis a</plateforme:contenu>
+<plateforme:date>15/08/2018</plateforme:date>
+
+</plateforme:Page>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      	<plateforme:Page rdf:ID="7">
+                    <plateforme:nom>Les symptômes les plus frequents</plateforme:nom>
+                    <plateforme:motcle>migraine,confusion,raideur</plateforme:motcle>
+                    <plateforme:contenu>
+                  Une raideur de nuque. Elle est due à la contraction involontaire des muscles du cou qui a
+                  pour but d’éviter les mouvements et de calmer la douleur. Cette contracture peut être douloureuse
+                  et se manifeste souvent par une tête un peu en arrière avec un corps en posture de chien de fusil.
+                  Les mouvements latéraux sont possibles, mais ils accentuent le mal de tête.
+                      </plateforme:contenu>
+                    <plateforme:date>17/03/2019</plateforme:date>									
+      	</plateforme:Page>
+
+      	<plateforme:Page rdf:ID="8">
+                    <plateforme:nom>Les risques</plateforme:nom>
+                    <plateforme:motcle>climatique,environnemental,social</plateforme:motcle>
+                    <plateforme:contenu>Du contenu sur les facteurs de riques</plateforme:contenu>
+                    <plateforme:date>17/03/2019</plateforme:date>								
+      	</plateforme:Page>
+</rdf:RDF>
+

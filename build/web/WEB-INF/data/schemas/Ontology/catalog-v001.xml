@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/xe6pjy4h.owl" uri="file:/Users/Ced/Documents/DATA/DOCTORAT/DOCTORAT-2017/TRAVAUX/IDOMEN_REPOSITORY/IDOMEN/Imports/External/NCBIT_import_NM.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/exx9hrna.owl" uri="file:/Users/Ced/Documents/DATA/DOCTORAT/DOCTORAT-2017/TRAVAUX/IDOMEN_REPOSITORY/IDOMEN/Imports/External/NCBITaxon_import_%23NeisseriaMeningitidis.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ido/2016-07-05/ido.owl" uri="file:/Users/Ced/Documents/DATA/DOCTORAT/DOCTORAT-2017/TRAVAUX/IDOMEN_REPOSITORY/IDOMEN/Imports/ido.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/temporal-intervals.owl" uri="file:/Users/Ced/Documents/DATA/DOCTORAT/DOCTORAT-2017/TRAVAUX/IDOMEN_REPOSITORY/IDOMEN/Imports/temporal-intervals.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/core.owl" uri="file:/Users/Ced/Documents/DATA/DOCTORAT/DOCTORAT-2017/TRAVAUX/IDOMEN_REPOSITORY/IDOMEN/Imports/core.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/annotations.owl" uri="file:/Users/Ced/Documents/DATA/DOCTORAT/DOCTORAT-2017/TRAVAUX/IDOMEN_REPOSITORY/IDOMEN/Imports/annotations.owl"/>
+    <uri id="Imports Wizard Entry" name="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl" uri="file:/Users/Ced/Documents/DATA/DOCTORAT/DOCTORAT-2017/TRAVAUX/IDOMEN_REPOSITORY/IDOMEN/Imports/protege-dc.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="file:/Users/Ced/Documents/DATA/DOCTORAT/DOCTORAT-2017/TRAVAUX/IDOMEN_REPOSITORY/IDOMEN/Imports/ontology-metadata.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ogms.owl" uri="file:/Users/Ced/Documents/DATA/DOCTORAT/DOCTORAT-2017/TRAVAUX/IDOMEN_REPOSITORY/IDOMEN/Imports/ogms.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl" uri="file:/Users/Ced/Documents/DATA/DOCTORAT/DOCTORAT-2017/TRAVAUX/IDOMEN_REPOSITORY/IDOMEN/Imports/bfo.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/releases/2017-07-19/ro.owl" uri="file:/Users/Ced/Documents/DATA/DOCTORAT/DOCTORAT-2017/TRAVAUX/IDOMEN_REPOSITORY/IDOMEN/Imports/ro.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1539424531972" name="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1" uri="idomen.owl"/>
+    </group>
+</catalog>

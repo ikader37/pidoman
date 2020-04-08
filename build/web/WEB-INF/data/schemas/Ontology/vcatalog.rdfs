@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2000/01/rdf-schema#"
+     xml:base="http://www.w3.org/2000/01/rdf-schema"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:vcatalog="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#adresse -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#adresse">
+        <comment xml:lang="en">Adress of a partner.</comment>
+        <comment xml:lang="fr">Adresse du partenaire.</comment>
+        <label xml:lang="en">Adress partner</label>
+        <label xml:lang="fr">Adresse du partenaire</label>
+        <domain rdf:resource="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Partenaire"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#equipe -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#equipe">
+        <comment xml:lang="fr">Equipe.</comment>
+        <comment xml:lang="en">team.</comment>
+        <label xml:lang="fr">Equipe</label>
+        <label xml:lang="en">team</label>
+        <domain rdf:resource="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Ressource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#format -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#format">
+        <comment xml:lang="fr"> format sous lequel a ete enregistre le modele.</comment>
+        <comment xml:lang="en">Format of model.</comment>
+        <label xml:lang="en">Format of model</label>
+        <label xml:lang="fr">format du modele</label>
+        <domain rdf:resource="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Ressource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#mots_cles -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#mots_cles">
+        <comment xml:lang="fr"> mots cles de la source.</comment>
+        <comment xml:lang="en">keyword of source.</comment>
+        <label xml:lang="en">Keyword of source</label>
+        <label xml:lang="fr">Mots cles source</label>
+        <domain rdf:resource="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Ressource"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#password -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#password">
+        <comment xml:lang="en">.</comment>
+        <comment xml:lang="fr">.</comment>
+        <label xml:lang="fr">Mot de passe</label>
+        <label xml:lang="en">Password</label>
+        <domain rdf:resource="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Utilisateur"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#pays -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#pays">
+        <comment xml:lang="en">.</comment>
+        <comment xml:lang="fr">Pays du partenaire.</comment>
+        <label xml:lang="en">Contry</label>
+        <label xml:lang="fr">Pays</label>
+        <domain rdf:resource="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Partenaire"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#profile -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#profile">
+        <comment xml:lang="en">.</comment>
+        <comment xml:lang="fr">.</comment>
+        <label xml:lang="en">Profile</label>
+        <label xml:lang="fr">Profile</label>
+        <domain rdf:resource="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Utilisateur"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#a_pour_privilège -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#a_pour_privilège">
+        <label xml:lang="fr">a pour privilège</label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Expert_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Expert_en">
+        <range rdf:resource="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Utilisateur"/>
+        <comment xml:lang="fr">expert en</comment>
+        <label xml:lang="fr">expert en </label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#classer_dans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#classer_dans">
+        <range rdf:resource="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Categorie"/>
+        <comment xml:lang="fr">classer dans</comment>
+        <label xml:lang="fr">Classer dans</label>
+        <label xml:lang="fr">classer dans </label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#declarer_par -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#declarer_par">
+        <range rdf:resource="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Utilisateur"/>
+        <comment xml:lang="en">declare by </comment>
+        <comment xml:lang="fr">declarer par</comment>
+        <label xml:lang="en">Declare by</label>
+        <label xml:lang="fr">declarer par </label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Categorie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Categorie">
+        <comment xml:lang="fr">.</comment>
+        <label xml:lang="fr">Categorie</label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Expertise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Expertise">
+        <subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Ressource"/>
+        <comment xml:lang="en"> The expertise is a help facility in the decision, by the search for the technical or scientific facts. She allows the various managers of resources to make their decisions in better knowledge of cause, by having a lighting deepened(fathomed) on certain stakes and consequences (financial, human) in their decisions. it is often confided to several experts.</comment>
+        <comment xml:lang="fr">.</comment>
+        <comment xml:lang="fr">dispositif d�aide � la d�cision, par la recherche des faits techniques ou scientifiques.Elle permet aux diff�rents managers de ressources de prendre leurs d�cisions en meilleure connaissance de cause, en ayant un �clairage approfondi sur certains enjeux et cons�quences(financi�res, humaines, ...) de leurs d�cisions.Elle  est souvent confi�e �  plusieurs experts.</comment>
+        <label xml:lang="fr">Expert</label>
+        <label xml:lang="en">Expertise</label>
+        <label xml:lang="fr">Expertise</label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Page -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Page">
+        <label xml:lang="fr">Page</label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Ressource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Ressource">
+        <comment xml:lang="en">Every type of support (paper, IT) whichwho are going to help in a knowledge of the risks</comment>
+        <comment xml:lang="fr">Tout type de support (papier, informatique) qui vont aider � une connaissance des risques.</comment>
+        <label xml:lang="en">Ressource</label>
+        <label xml:lang="fr">Ressource</label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Utilisateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#Utilisateur">
+        <comment xml:lang="en">.</comment>
+        <comment xml:lang="fr">.</comment>
+        <label xml:lang="en">User</label>
+        <label xml:lang="fr">Utilisateur</label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#lien">
+        <comment xml:lang="en">localisation of the  model.</comment>
+        <label xml:lang="en">localisation of model</label>
+        <comment xml:lang="fr"> la ou on peut trouver le modele, les references du modele.</comment>
+        <label xml:lang="fr">localisationdu modele</label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#nom">
+        <comment xml:lang="en">name of a partner.</comment>
+        <comment xml:lang="fr">nom du partenaire.</comment>
+        <label xml:lang="en">Name partner</label>
+        <label xml:lang="fr">Nom du partenaire</label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

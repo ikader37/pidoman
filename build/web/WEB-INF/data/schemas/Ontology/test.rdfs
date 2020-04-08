@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf [
+   <!ENTITY vcatalog  "http://www.semanticweb.org/ontologies/2017/9/IDOMEN/2.1/vcatalog.rdfs#"> 
+   <!ENTITY rdfs     "http://www.w3.org/2000/01/rdf-schema">
+    ]>
+
+<rdf:RDF  
+   xmlns:rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="&rdfs;#"
+   xmlns     ="&rdfs;#" 
+   xml:base  ="&vcatalog;">
+
+</rdf:RDF>

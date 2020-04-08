@@ -1,0 +1,4 @@
+	201	253
+Ma vache	1	0
+UN M	0	1
+Ma beaute	1	0
