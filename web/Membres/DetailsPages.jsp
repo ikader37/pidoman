@@ -10,24 +10,25 @@
     <div class="col-lg-6 col-xs-6 col-md-6 col-sm-6">
         <div class="row">
             <div class="col-lg-12 col-xl-12 col-sm-12 col-md-12">
-                <h1>Details</h1>
+                <center><h1><strong>Details</strong></h1></center>
             </div>
         </div>
         <c:if test="${page!=null}">
             <div class="row">
                 <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12" >
-                    <h2><a>${page.titre}</a></h2>
+                    <center><h2><a>${page.titre}</a></h2></center>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12" >
-                    <p style="color: red">Mot(s) clé(s):${page.keyWords}</p>
+                    <p style="color: red"><strong>Mot(s) clé(s):</strong> ${page.keyWords}</p>
                 </div>
             </div>
+                
             <div class="row">
                 <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12" >
                     <p style="color: green">
-                        Catégories:
+                        <strong>Catégories:</strong>
                         <c:choose>
                             <c:when test="${page.pageHasCategorieList.size()>0}">
                                 <c:forEach items="${page.pageHasCategorieList}" var="c">
@@ -41,19 +42,42 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
-                    <p>Contenu : ${page.contenu}</p>
+                
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-xl-3 col-sm-3">
+                        <img  height="100%" width="100%" src="${page.getImg1()}"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xl-3 col-sm-3">
+                        <img height="100%" width="100%" src="${page.getImg2()}"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xl-3 col-sm-3">
+                        <img height="100%" width="100%" src="${page.getImg3()}"/>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xl-3 col-sm-3">
+                        <img height="100%" width="100%" src="${page.getImg4()}"/>
+                    </div>
                 </div>
-            </div>
-
-            <c:choose>
-                <c:when test="${page.commentaireList.size()>0}">
+                    
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-xs-12 col-xl-12">
-                            <center><h2>Commentaires</h2></center>
+                        <div class="col-lg-6 col-md-6 col-xl-6 col-xl-6">
+                             <i class="fa fa-cloud-download"></i><a class="primary" type="button" href="${page.getDoc()}" >Telecharger</a>
                         </div>
                     </div>
+                        <br/>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+                    <p><strong>Contenu : </strong>${page.contenu}</p>
+                </div>
+            </div>
+                <br/>
+                <div class="row">
+                        <div class="col-lg-12 col-md-12 col-xs-12 col-xl-12">
+                            <center><h2><strong>Commentaires</strong></h2></center>
+                        </div>
+                    </div>
+            <c:choose>
+                <c:when test="${page.commentaireList.size()>0}">
+                    
                     <div class="row">
                         <div  class="col-lg-12 col-md-12 col-xs-12 col-sm-12 col-xl-12">
                             <c:forEach  items="${page.commentaireList}" var="cc">
@@ -62,14 +86,14 @@
                                         <div class="row">
                                             <div class="col-lg-12 col-xs-12 col-md-12 col-sm-12 col-xl-12">
                                                 <p>
-                                                    Sujet:${cc.sujet}
+                                                    <strong>Sujet:</strong> ${cc.sujet}
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-12 col-xs-12 col-md-12 col-sm-12 col-xl-12">
                                                 <p>
-                                                    Conttenu:${cc.comment}
+                                                    <strong>Contenu:</strong>${cc.comment}
                                                 </p>
                                                 <hr/>
                                             </div>
@@ -81,11 +105,12 @@
                     </div>
                 </c:when>
                 <c:when test="${page.commentaireList.size()<=0}">
-                    <p>
-                        Aucun commentaire
+                    <p class="danger" >
+                        <strong>Aucun commentaire</strong>
                     </p>
                 </c:when>
             </c:choose>
+                    <br/>
             <div class="row">
                 <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
                     <div class="panel panel-default">

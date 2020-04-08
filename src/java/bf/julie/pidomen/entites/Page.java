@@ -76,15 +76,15 @@ public class Page implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     private Date date_modification;
     @Column(name = "doc")
-    private byte[] doc;
+    private String doc;
     @Column(name = "img1")
-    private byte[] img1;
+    private String img1;
     @Column(name = "img2")
-    private byte[] img2;
+    private String img2;
     @Column(name = "img3")
-    private byte[] img3;
+    private String img3;
     @Column(name = "img4")
-    private byte[] img4;
+    private String img4;
     
     
     @Column(name = "keyword")//Designe les mots cle de la pages
@@ -181,43 +181,43 @@ public class Page implements Serializable {
         this.keyWords = keyWords;
     }
 
-    public byte[] getDoc() {
+    public String getDoc() {
         return doc;
     }
 
-    public void setDoc(byte[] doc) {
+    public void setDoc(String doc) {
         this.doc = doc;
     }
 
-    public byte[] getImg1() {
+    public String getImg1() {
         return img1;
     }
 
-    public void setImg1(byte[] img1) {
+    public void setImg1(String img1) {
         this.img1 = img1;
     }
 
-    public byte[] getImg2() {
+    public String getImg2() {
         return img2;
     }
 
-    public void setImg2(byte[] img2) {
+    public void setImg2(String img2) {
         this.img2 = img2;
     }
 
-    public byte[] getImg3() {
+    public String getImg3() {
         return img3;
     }
 
-    public void setImg3(byte[] img3) {
+    public void setImg3(String img3) {
         this.img3 = img3;
     }
 
-    public byte[] getImg4() {
+    public String getImg4() {
         return img4;
     }
 
-    public void setImg4(byte[] img4) {
+    public void setImg4(String img4) {
         this.img4 = img4;
     }
     

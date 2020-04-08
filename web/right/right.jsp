@@ -20,7 +20,7 @@
         if (pList.size() > 0) {
 
             for (int i = 0; i < pList.size(); i++) {
-                byte[] img1=pList.get(i).getImg1();
+               // byte[] img1=pList.get(i).getImg1();
                // response.setContentType("UTF-8");
                // String encodage=Base64.getEncoder().encodeToString(img1);
                 

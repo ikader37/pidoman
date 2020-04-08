@@ -38,6 +38,12 @@ public class CreatePagesServlet extends HttpServlet {
     public static final String CHEMIN_FINAL="src/";//Ou seront stocker les fichiers au final
     boolean erreur;
     String message="";
+    private final String UPLOAD_DIRECTORY = "uploadfiles";
+    
+     // upload settings
+    private static final int MEMORY_THRESHOLD   = 1024 * 1024 * 3;  // 3MB
+    private static final int MAX_FILE_SIZE      = 1024 * 1024 * 40; // 40MB
+    private static final int MAX_REQUEST_SIZE   = 1024 * 1024 * 50; // 50MB
     
     
     //emf=Persistence.createEntityManagerFactory("PlateformeMeningitPU");
@@ -76,6 +82,21 @@ public class CreatePagesServlet extends HttpServlet {
         listCat=catExec.findCategorieEntities();
         req.setAttribute("categories", listCat);
         
+      // gets absolute path of the web application
+        String appPath = req.getServletContext().getRealPath("");
+        System.out.println("APP PATH:"+appPath);
+        
+        // constructs path of the directory to save uploaded file
+        String savePath = appPath + File.separator + UPLOAD_DIRECTORY;//+ File.separator
+        String savePath2=appPath  + UPLOAD_DIRECTORY;
+        
+        System.out.println("Save path:"+savePath);
+         
+        // creates the save directory if it does not exists
+        
+        
+        
+        
         vue="/Connexion.jsp";
         if(session.getAttribute("login")==null){//Verifier sil ya variable session
             
@@ -103,29 +124,96 @@ public class CreatePagesServlet extends HttpServlet {
                 page.setDateCreation(new Date());
                 
                
-                //Recuperons les fichiers
-                Part partDoc=req.getPart("doc");
+                File fileSaveDir = new File(savePath);
+        if (!fileSaveDir.exists()) {
+            fileSaveDir.mkdir();
+        }
+        
+        
+        Part partDoc=req.getPart("doc");
+        if(partDoc!=null){
+            String fileName = extractFileName(partDoc);
+            // refines the fileName in case it is an absolute path
+            fileName = new File(fileName).getName();
+            System.out.println("File:"+fileName);
+            partDoc.write(savePath + File.separator + fileName);
+            page.setDoc(UPLOAD_DIRECTORY+"/"+  fileName);
+        }
+        
+        Part partImg_1=req.getPart("img1");
+        
+        if(partImg_1!=null){
+            String fileName = extractFileName(partImg_1);
+            // refines the fileName in case it is an absolute path
+            fileName = new File(fileName).getName();
+            System.out.println("File:"+fileName);
+            
+            partImg_1.write(savePath + File.separator + fileName);
+            page.setImg1(UPLOAD_DIRECTORY+"/"+  fileName);
+        }
+        
+        
+        Part partImg_2=req.getPart("img2");
+        
+        
+        if(partImg_2!=null){
+            String fileName = extractFileName(partImg_2);
+            // refines the fileName in case it is an absolute path
+            fileName = new File(fileName).getName();
+            System.out.println("File:"+fileName);
+            partImg_2.write(savePath + File.separator + fileName);
+            page.setImg2(UPLOAD_DIRECTORY+"/"+  fileName);
+        }
+        
+        Part partImg_3=req.getPart("img3");
+        
+        if(partImg_3!=null){
+            String fileName = extractFileName(partImg_3);
+            // refines the fileName in case it is an absolute path
+            fileName = new File(fileName).getName();
+            System.out.println("File:"+fileName);
+            partImg_3.write(savePath + File.separator + fileName);
+            page.setImg3(UPLOAD_DIRECTORY+"/"+  fileName);
+        }
+        
+        Part partImg_4=req.getPart("img4");
+        
+        
+         if(partImg_4!=null){
+            String fileName = extractFileName(partImg_4);
+            // refines the fileName in case it is an absolute path
+            fileName = new File(fileName).getName();
+            System.out.println("File:"+fileName);
+            partImg_4.write(savePath + File.separator + fileName);
+            page.setImg4(UPLOAD_DIRECTORY+"/"+  fileName);
+        }
                 
-                String docNom=getNomFichier(partDoc);
+                
+                
+                
+                //Recuperons les fichiers
+                //Part partDoc=req.getPart("doc");
+                
+               // String docNom=getNomFichier(partDoc);
 //                
 //                //Si on a bien un fichier
 
-                 if (docNom != null && !docNom.isEmpty()) {
-                    String nomChamp = partDoc.getName();
-                    // Corrige un bug du fonctionnement d'Internet Explorer
-                     docNom = docNom.substring(docNom.lastIndexOf('/') + 1)
-                            .substring(docNom.lastIndexOf('\\') + 1);
-
-                    // On écrit définitivement le fichier sur le disque
-                    //ecrireFichier(partDoc, docNom, CHEMIN_FINAL);
-
-                   // req.setAttribute(nomChamp, docNom);
-                }
+//                 if (docNom != null && !docNom.isEmpty()) {
+//                    String nomChamp = partDoc.getName();
+//                    // Corrige un bug du fonctionnement d'Internet Explorer
+//                     docNom = docNom.substring(docNom.lastIndexOf('/') + 1)
+//                            .substring(docNom.lastIndexOf('\\') + 1);
+//
+//                    // On écrit définitivement le fichier sur le disque
+//                    //ecrireFichier(partDoc, docNom, CHEMIN_FINAL);
+//
+//                   // req.setAttribute(nomChamp, docNom);
+//                }
 
                
                 InputStream doc=req.getPart("doc").getInputStream();
                 System.out.println("DOCCCC :"+doc.toString());
-                page.setDoc(new byte[doc.available()]);
+                //page.setDoc(new byte[doc.available()]);
                 
                 //page.setDoc(IOUtils.toByteArray(doc));
                 
@@ -233,5 +321,21 @@ public class CreatePagesServlet extends HttpServlet {
         return null;
     }
     
+    
+    
+    
+    /**
+     * Extracts file name from HTTP header content-disposition
+     */
+    private String extractFileName(Part part) {
+        String contentDisp = part.getHeader("content-disposition");
+        String[] items = contentDisp.split(";");
+        for (String s : items) {
+            if (s.trim().startsWith("filename")) {
+                return s.substring(s.indexOf("=") + 2, s.length()-1);
+            }
+        }
+        return "";
+    }
     
 }
